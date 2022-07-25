@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+a{
+    text-decoration: none;
+}
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  background: #333;
+}
+.container{
+    width: 350px;
+    height: 500px;
+    background: #333;
+    box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title{
+    font-size: 35px;
+    color: #999;
+    margin-bottom: 10px;
+
+}
+.input-field{
+    width:280px;
+    height: 50px;
+    margin: 10px 0;
+    align-items: center;
+    
+}
+.input-field input{
+    outline: none;
+    background: none;
+    font-size: 20px;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+p,a{
+    font-size: 14px;
+    color: #999;
+}
+.btn{
+    text-align: center;
+    font-size: 18px;
+    width: 280px;
+    height: 50px;
+    background: none;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #999;
+    cursor: pointer;
+
+}
+.btn:hover{
+    color: #333;
+    border:none;
+    background:#999;
+}
+.text{
+    color:#f0f0f0
+}
+@media screen and (max-width: 450px){
+    .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        overflow-y: scroll;
+        text-align: center;
+        width: 200px;
+        height: 300px;
+    }
+    .input-field{
+        width: calc(100%/2 - 15px);
+    }
+    .input-field label{
+        margin-bottom: 5px;
+    }
+    .btn{
+        margin: auto;
+    }
+}
+
+
+
+
+
+
